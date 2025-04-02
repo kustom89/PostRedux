@@ -1,0 +1,33 @@
+{
+  "name": "post-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/compression": "^1.7.5",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.17",
+    "rimraf": "^6.0.1",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.5.0",
+    "compression": "^1.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "env-var": "^7.5.0",
+    "express": "^5.1.0",
+    "prisma": "^6.5.0"
+  }
+}
